@@ -3,12 +3,11 @@ env:
         - authentication:
             method: script
             parameters:
-                #script: "/github/workspace/dast-config/testfire_auth.js" #change this
-                script: "/dast-config/testfire_auth.js" #change this
-                scriptEngine: "ECMAScript : Graal.js"
-                usernameKey: "uid"
-                passwordKey: "passw"
                 loginURL: http://testfire.net/doLogin
+                passwordKey: passw
+                script: "/github/workspace/dast-config/testfire_auth.js"
+                scriptEngine: 'ECMAScript : Graal.js'
+                usernameKey: uid
             verification:
                 loggedInRegex: Sign off
                 loggedOutRegex: Sign In
@@ -43,17 +42,16 @@ env:
         progressToStdout: true
     vars: {}
 jobs:
-    - parameters:
-        action: "add"
-        type: "authentication"
-        engine: "ECMAScript : Graal.js"
-        name: "testfire_auth"
-        #file: "/github/workspace/dast-config/testfire_auth.js" #change this
-        file: "/dast-config/testfire_auth.js" #change this
-        target: ""
+    - name: script
+      parameters:
+        action: add
+        engine: 'ECMAScript : Graal.js'
+        file: "/github/workspace/dast-config/testfire_auth.js"
         inline: ""
-      name: "script"
-      type: "script"
+        name: testfire_auth
+        target: ""
+        type: authentication
+      type: script
     - name: passiveScan-config
       parameters:
         enableTags: false
@@ -94,8 +92,7 @@ jobs:
       type: activeScan
     - name: report
       parameters:
-        reportDir: /home/ubuntu/output/dast-output-1230056092
+        reportDir: /demo/test_output/dast-output-1797151050
         reportFile: ZAP-Report
         template: traditional-json-plus
       type: report
-
