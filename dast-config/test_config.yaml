@@ -30,7 +30,7 @@ env:
           technology:
             exclude: []
           urls:
-            - http://testfire.net/bank/transfer.jsp
+            - http://testfire.net/
           users:
             - credentials:
                 password: admin
