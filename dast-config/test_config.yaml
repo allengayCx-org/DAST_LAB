@@ -5,7 +5,7 @@ env:
             parameters:
                 loginURL: http://testfire.net/doLogin
                 passwordKey: passw
-                script: "/github/workspace/dast-config/testfire_auth.js"
+                script: /github/workspace/dast-config/testfire_auth.js
                 scriptEngine: 'ECMAScript : Graal.js'
                 usernameKey: uid
             verification:
@@ -46,7 +46,7 @@ jobs:
       parameters:
         action: add
         engine: 'ECMAScript : Graal.js'
-        file: "/github/workspace/dast-config/testfire_auth.js"
+        file: /github/workspace/dast-config/testfire_auth.js
         inline: ""
         name: testfire_auth
         target: ""
@@ -92,7 +92,7 @@ jobs:
       type: activeScan
     - name: report
       parameters:
-        reportDir: /demo/test_output/dast-output-1797151050
+        reportDir: /demo/test_output/dast-output-756893739
         reportFile: ZAP-Report
         template: traditional-json-plus
       type: report
