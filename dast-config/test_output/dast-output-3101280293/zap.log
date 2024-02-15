@@ -1,0 +1,384 @@
+2024-02-15 20:36:25,746 [main ] INFO  Constant - Copying default configuration to /demo/test_output/dast-output-3101280293/config.xml
+2024-02-15 20:36:25,878 [main ] INFO  Constant - Creating directory /demo/test_output/dast-output-3101280293/session
+2024-02-15 20:36:25,880 [main ] INFO  Constant - Creating directory /demo/test_output/dast-output-3101280293/dirbuster
+2024-02-15 20:36:25,880 [main ] INFO  Constant - Creating directory /demo/test_output/dast-output-3101280293/fuzzers
+2024-02-15 20:36:25,881 [main ] INFO  Constant - Creating directory /demo/test_output/dast-output-3101280293/plugin
+2024-02-15 20:36:25,984 [main ] INFO  CommandLineBootstrap - ZAP 2.14.0 started 15/02/2024, 20:36:25 with home /demo/test_output/dast-output-3101280293/
+2024-02-15 20:36:36,212 [main ] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, version=19.0.0], [id=ascanrules, version=59.0.0], [id=authhelper, version=0.10.0], [id=automation, version=0.34.0], [id=bruteforce, version=15.0.0], [id=callhome, version=0.10.0], [id=commonlib, version=1.20.0], [id=database, version=0.3.0], [id=diff, version=14.0.0], [id=directorylistv1, version=7.0.0], [id=domxss, version=18.0.0], [id=encoder, version=1.4.0], [id=exim, version=0.8.0], [id=formhandler, version=6.5.0], [id=fuzz, version=13.12.0], [id=gettingStarted, version=16.0.0], [id=graaljs, version=0.5.0], [id=graphql, version=0.22.0], [id=help, version=17.0.0], [id=hud, version=0.18.0], [id=invoke, version=14.0.0], [id=network, version=0.13.0], [id=oast, version=0.17.0], [id=onlineMenu, version=12.0.0], [id=openapi, version=38.0.0], [id=postman, version=0.2.0], [id=pscanrules, version=53.0.0], [id=quickstart, version=43.0.0], [id=replacer, version=16.0.0], [id=reports, version=0.27.0], [id=requester, version=7.4.0], [id=retest, version=0.8.0], [id=retire, version=0.29.0], [id=reveal, version=7.0.0], [id=scripts, version=44.0.0], [id=selenium, version=15.16.0], [id=soap, version=21.0.0], [id=spider, version=0.8.0], [id=spiderAjax, version=23.18.0], [id=tips, version=12.0.0], [id=webdriverlinux, version=69.0.0], [id=websocket, version=30.0.0], [id=zest, version=43.0.0]]
+2024-02-15 20:36:36,215 [main ] INFO  ExtensionFactory - Loading extensions
+2024-02-15 20:36:37,059 [main ] INFO  TlsUtils - Using supported SSL/TLS protocols: [TLSv1.2, TLSv1.3]
+2024-02-15 20:36:37,402 [main ] INFO  ExtensionFactory - Extensions loaded
+2024-02-15 20:36:38,068 [main ] INFO  ExtensionLoader - Initializing Auto-update Extension - Allows ZAP to check for updates
+2024-02-15 20:36:38,072 [main ] INFO  ExtensionLoader - Initializing Options Extension - Options Extension
+2024-02-15 20:36:38,073 [main ] INFO  ExtensionLoader - Initializing Edit Menu Extension - Edit Menu Extension
+2024-02-15 20:36:38,073 [main ] INFO  ExtensionLoader - Initializing API Extension - Provides a rest based API for controlling and accessing ZAP
+2024-02-15 20:36:38,079 [main ] INFO  ExtensionLoader - Initializing History Extension - History Extension
+2024-02-15 20:36:38,080 [main ] INFO  ExtensionLoader - Initializing ExtensionReveal - Show hidden fields and enable disabled fields
+2024-02-15 20:36:38,086 [main ] INFO  ExtensionLoader - Initializing Search Extension - Search messages for strings and regular expressions
+2024-02-15 20:36:38,087 [main ] INFO  ExtensionLoader - Initializing Breakpoint Extension - Allows you to intercept and modify requests and responses
+2024-02-15 20:36:38,089 [main ] INFO  ExtensionLoader - Initializing Passive Scan Extension - Passive scanner
+2024-02-15 20:36:38,152 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Script Passive Scan Rules
+2024-02-15 20:36:38,153 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Stats Passive Scan Rule
+2024-02-15 20:36:38,154 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Authentication Request Identified
+2024-02-15 20:36:38,154 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Session Management Response Identified
+2024-02-15 20:36:38,154 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Verification Request Identified
+2024-02-15 20:36:38,154 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Vulnerable JS Library (Powered by Retire.js)
+2024-02-15 20:36:38,155 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: WSDL File Detection
+2024-02-15 20:36:38,155 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Anti-clickjacking Header
+2024-02-15 20:36:38,155 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Application Error Disclosure
+2024-02-15 20:36:38,155 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Big Redirect Detected (Potential Sensitive Information Leak)
+2024-02-15 20:36:38,155 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Re-examine Cache-control Directives
+2024-02-15 20:36:38,156 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Charset Mismatch
+2024-02-15 20:36:38,156 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Content Security Policy (CSP) Header Not Set
+2024-02-15 20:36:38,156 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: CSP
+2024-02-15 20:36:38,156 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Content-Type Header Missing
+2024-02-15 20:36:38,156 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie No HttpOnly Flag
+2024-02-15 20:36:38,156 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Loosely Scoped Cookie
+2024-02-15 20:36:38,157 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie without SameSite Attribute
+2024-02-15 20:36:38,157 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie Without Secure Flag
+2024-02-15 20:36:38,157 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Cross-Domain Misconfiguration
+2024-02-15 20:36:38,157 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2024-02-15 20:36:38,157 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Absence of Anti-CSRF Tokens
+2024-02-15 20:36:38,157 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Directory Browsing
+2024-02-15 20:36:38,158 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Hash Disclosure
+2024-02-15 20:36:38,158 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Heartbleed OpenSSL Vulnerability (Indicative)
+2024-02-15 20:36:38,158 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Private IP Disclosure
+2024-02-15 20:36:38,158 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Session ID in URL Rewrite
+2024-02-15 20:36:38,158 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Debug Error Messages
+2024-02-15 20:36:38,159 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in URL
+2024-02-15 20:36:38,160 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2024-02-15 20:36:38,161 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Suspicious Comments
+2024-02-15 20:36:38,162 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Weak Authentication Method
+2024-02-15 20:36:38,162 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: HTTP to HTTPS Insecure Transition in Form Post
+2024-02-15 20:36:38,162 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: HTTPS to HTTP Insecure Transition in Form Post
+2024-02-15 20:36:38,162 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Insecure JSF ViewState
+2024-02-15 20:36:38,163 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Reverse Tabnabbing
+2024-02-15 20:36:38,163 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Secure Pages Include Mixed Content
+2024-02-15 20:36:38,163 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Modern Web Application
+2024-02-15 20:36:38,163 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: PII Disclosure
+2024-02-15 20:36:38,163 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Retrieved from Cache
+2024-02-15 20:36:38,164 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: HTTP Server Response Header
+2024-02-15 20:36:38,164 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Strict-Transport-Security Header
+2024-02-15 20:36:38,165 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Timestamp Disclosure
+2024-02-15 20:36:38,165 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: User Controllable Charset
+2024-02-15 20:36:38,165 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie Poisoning
+2024-02-15 20:36:38,166 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: User Controllable HTML Element Attribute (Potential XSS)
+2024-02-15 20:36:38,166 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: User Controllable JavaScript Event (XSS)
+2024-02-15 20:36:38,166 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Open Redirect
+2024-02-15 20:36:38,166 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Username Hash Found
+2024-02-15 20:36:38,166 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Viewstate
+2024-02-15 20:36:38,168 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: X-AspNet-Version Response Header
+2024-02-15 20:36:38,168 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Backend-Server Header Information Leak
+2024-02-15 20:36:38,169 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: X-ChromeLogger-Data (XCOLD) Header Information Leak
+2024-02-15 20:36:38,169 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Content-Type-Options Header Missing
+2024-02-15 20:36:38,169 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Debug-Token Information Leak
+2024-02-15 20:36:38,169 [main ] INFO  ExtensionPassiveScan - loaded passive scan rule: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s)
+2024-02-15 20:36:38,190 [main ] INFO  ExtensionLoader - Initializing Alerts Extension - Allows you to view and manage alerts
+2024-02-15 20:36:38,201 [main ] INFO  ExtensionLoader - Initializing Active Scan Extension - Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2024-02-15 20:36:38,212 [main ] INFO  ExtensionLoader - Initializing Standard Menus Extension - A set of common popup menus for miscellaneous tasks
+2024-02-15 20:36:38,213 [main ] INFO  ExtensionLoader - Initializing ExtensionBruteForce - Forced browsing of files and directories using code from the OWASP DirBuster tool
+2024-02-15 20:36:38,215 [main ] INFO  ExtensionLoader - Initializing Compare Extension - Compares 2 sessions and generates an HTML file showing the differences
+2024-02-15 20:36:38,215 [main ] INFO  ExtensionLoader - Initializing ExtensionInvoke - Invoke external applications passing context related information such as URLs and parameters
+2024-02-15 20:36:38,216 [main ] INFO  ExtensionLoader - Initializing Anti-CSRF Extension - Handles anti cross site request forgery (CSRF) tokens
+2024-02-15 20:36:38,231 [main ] INFO  ExtensionLoader - Initializing Authentication Extension - Authentication Extension
+2024-02-15 20:36:38,242 [main ] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+2024-02-15 20:36:38,245 [main ] INFO  ExtensionLoader - Initializing Log4j Extension - Logs errors to the Output tab in development mode only
+2024-02-15 20:36:38,246 [main ] INFO  ExtensionLoader - Initializing Users Extension - Users Extension
+2024-02-15 20:36:38,248 [main ] INFO  ExtensionLoader - Initializing Parameters Extension - Summarise and analyse FORM and URL parameters as well as cookies
+2024-02-15 20:36:38,248 [main ] INFO  ExtensionLoader - Initializing Script Extension - Script integration
+2024-02-15 20:36:38,252 [main ] INFO  ExtensionLoader - Initializing ExtensionScripts - Scripting console, supports all JSR 223 scripting languages
+2024-02-15 20:36:38,612 [main ] WARN  AbstractParam - Failed to create enum for 'script.console.defaultScriptChangedBehaviour' using 'Ask Each Time'. Valid values: [Keep Script, Replace Script, Ask Each Time]
+2024-02-15 20:36:38,614 [main ] INFO  ExtensionLoader - Initializing Forced User Extension - Forced User Extension
+2024-02-15 20:36:38,618 [main ] INFO  ExtensionLoader - Initializing HTTP Sessions Extension - Extension handling HTTP sessions
+2024-02-15 20:36:38,623 [main ] INFO  ExtensionLoader - Initializing ExtensionZest - Zest is a specialized scripting language, originally, from Mozilla specifically designed to be used in security tools
+2024-02-15 20:36:38,877 [main ] INFO  ExtensionLoader - Initializing ExtensionDiff - ExtensionDiff
+2024-02-15 20:36:38,878 [main ] INFO  ExtensionLoader - Initializing HTTP Panel Post Table View Extension - HTTP Panel Post Table View Extension
+2024-02-15 20:36:38,878 [main ] INFO  ExtensionLoader - Initializing Encoder Addon - Adds support for scriptable encoders to ZAP.
+2024-02-15 20:36:38,879 [main ] INFO  ExtensionLoader - Initializing Session Management Extension - Session Management Extension
+2024-02-15 20:36:38,883 [main ] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+2024-02-15 20:36:38,884 [main ] INFO  ExtensionLoader - Initializing HTTP Panel Form Table View Extension - HTTP Panel Form Table View Extension
+2024-02-15 20:36:38,884 [main ] INFO  ExtensionLoader - Initializing WebSockets Support - Capture messages from WebSockets with the ability to set breakpoints.
+2024-02-15 20:36:38,934 [main ] INFO  ExtensionLoader - Initializing SOAP/WSDL Support - Allows you to import a WSDL file containing operations which ZAP will access, adding them to the Sites tree.
+2024-02-15 20:36:38,940 [main ] INFO  ExtensionLoader - Initializing Core UI Extension - Core UI related functionality.
+2024-02-15 20:36:38,941 [main ] INFO  ExtensionLoader - Initializing Authorization Extension - Authorization Extension
+2024-02-15 20:36:38,942 [main ] INFO  ExtensionLoader - Initializing Requester - Allows to manually edit and send messages.
+2024-02-15 20:36:38,943 [main ] INFO  ExtensionLoader - Initializing AJAX Spider - AJAX Spider, uses Crawljax
+2024-02-15 20:36:38,955 [main ] INFO  ExtensionLoader - Initializing WebDriver Provider - Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2024-02-15 20:36:38,964 [main ] INFO  ExtensionLoader - Initializing Refresh Sites Tree Extension - Adds menu item to refresh the Sites tree
+2024-02-15 20:36:38,965 [main ] INFO  ExtensionLoader - Initializing Help Extension - ZAP User Guide
+2024-02-15 20:36:38,965 [main ] INFO  ExtensionLoader - Initializing Call Home - Handles all of the calls to ZAP services
+2024-02-15 20:36:38,967 [main ] INFO  ExtensionLoader - Initializing Network Extension - Provides core networking capabilities.
+2024-02-15 20:36:39,009 [main ] INFO  ConnectionOptions - Unsafe SSL/TLS renegotiation disabled.
+2024-02-15 20:36:39,013 [main ] INFO  ExtensionLoader - Initializing Extension Configuration Extension - Allows you to configure which extensions are loaded when ZAP starts
+2024-02-15 20:36:39,014 [main ] INFO  ExtensionLoader - Initializing Combined HTTP Panels Extension - Combined HTTP Panels Extension
+2024-02-15 20:36:39,014 [main ] INFO  ExtensionLoader - Initializing HTTP Panel Hex View Extension - HTTP Panel Hex View Extension
+2024-02-15 20:36:39,014 [main ] INFO  ExtensionLoader - Initializing HTTP Panel Image View Extension - HTTP Panel Image View Extension
+2024-02-15 20:36:39,014 [main ] INFO  ExtensionLoader - Initializing HTTP Panel Query Table View Extension - HTTP Panel Query Table View Extension
+2024-02-15 20:36:39,014 [main ] INFO  ExtensionLoader - Initializing HTTP Panel Syntax Highlighter View Extension - HTTP Panel Syntax Highlighter View Extension
+2024-02-15 20:36:39,014 [main ] INFO  ExtensionLoader - Initializing Keyboard Configuration Extension - Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2024-02-15 20:36:39,015 [main ] INFO  ExtensionLoader - Initializing Scanner Rule Configuration Extension - Active and passive rule configuration
+2024-02-15 20:36:39,018 [main ] INFO  ExtensionLoader - Initializing Statistics Extension - Statistics
+2024-02-15 20:36:39,019 [main ] INFO  ExtensionStats - Start recording in memory stats
+2024-02-15 20:36:39,020 [main ] INFO  ExtensionLoader - Initializing Custom Pages Extension - Custom Pages Definition
+2024-02-15 20:36:39,020 [main ] INFO  ExtensionLoader - Initializing Quick Start panel  - Adds the Quick Start panel for scanning and exploring applications
+2024-02-15 20:36:39,023 [main ] INFO  ExtensionLoader - Initializing Quick Start Ajax Spider integration - Add the option to use the Ajax Spider in the Quick Start scan
+2024-02-15 20:36:39,023 [main ] INFO  ExtensionLoader - Initializing Quick Start HUD Integration - HUD integration for the quick start panel
+2024-02-15 20:36:39,023 [main ] INFO  ExtensionLoader - Initializing Quick Start Browser Launcher - Launch browsers preset proxying through ZAP
+2024-02-15 20:36:39,024 [main ] INFO  ExtensionLoader - Initializing Quick Start Spider Integration - Adds the option to use the traditional Spider in the Quick Start scan.
+2024-02-15 20:36:39,025 [main ] INFO  ExtensionLoader - Initializing Retest - Facilitates the verification of presence/absence of certain alerts.
+2024-02-15 20:36:39,026 [main ] INFO  ExtensionLoader - Initializing ExtensionGraphQl - Allows you to inspect and attack GraphQL endpoints.
+2024-02-15 20:36:39,029 [main ] INFO  ExtensionLoader - Initializing GraphQL Automation - GraphQL Automation Framework Integration
+2024-02-15 20:36:39,031 [main ] INFO  ExtensionLoader - Initializing GraphQL Spider - GraphQL Spider Integration
+2024-02-15 20:36:39,032 [main ] INFO  ExtensionLoader - Initializing Match and Replace - Easy way to replace strings in requests and responses
+2024-02-15 20:36:39,036 [main ] INFO  ExtensionLoader - Initializing Replacer Automation - Replacer Automation Framework Integration
+2024-02-15 20:36:39,038 [main ] INFO  ExtensionLoader - Initializing Authentication Helper - Authentication Helper
+2024-02-15 20:36:39,040 [main ] INFO  ExtensionLoader - Initializing AJAX Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated AJAX Spider scan.
+2024-02-15 20:36:39,042 [main ] INFO  ExtensionLoader - Initializing Automation Framework - Provides functionality to simplify using ZAP in an automated manner
+2024-02-15 20:36:39,043 [main ] INFO  ExtensionLoader - Initializing ExtensionFormHandler - This extension allows a user to change the default values used for generated content (e.g. spiders, importers).
+2024-02-15 20:36:39,048 [main ] INFO  ExtensionLoader - Initializing OpenAPI Import - Allows you to spider and import OpenAPI (Swagger) definitions 
+2024-02-15 20:36:39,051 [main ] INFO  ExtensionLoader - Initializing OpenAPI Automation - OpenAPI Automation Framework Integration
+2024-02-15 20:36:39,053 [main ] INFO  ExtensionLoader - Initializing OpenAPI Spider - OpenAPI Spider Integration
+2024-02-15 20:36:39,065 [main ] INFO  ExtensionLoader - Initializing GraalVM JavaScript Engine Extension - Provides the GraalVM JavaScript engine for ZAP scripting.
+2024-02-15 20:36:39,627 [main ] INFO  ExtensionLoader - Initializing SOAP Automation - SOAP Automation Framework Integration
+2024-02-15 20:36:39,636 [main ] INFO  ExtensionLoader - Initializing SOAP Spider - SOAP Spider Integration
+2024-02-15 20:36:39,638 [main ] INFO  ExtensionLoader - Initializing Import/Export - Import and Export functionality supporting multiple formats.
+2024-02-15 20:36:39,641 [main ] INFO  ExtensionLoader - Initializing Import/Export Automation - Import/Export Automation Framework Integration
+2024-02-15 20:36:39,642 [main ] INFO  ExtensionLoader - Initializing ExtensionDomXSS - DOM XSS Active Scan Rule
+2024-02-15 20:36:39,711 [main ] INFO  ExtensionLoader - Initializing Passive Scan Rules - Release status passive scan rules
+2024-02-15 20:36:39,712 [main ] INFO  ExtensionLoader - Initializing Ajax Spider Automation - Ajax Spider Automation Framework Integration
+2024-02-15 20:36:39,716 [main ] INFO  ExtensionLoader - Initializing Scripts Automation Framework Integration - Scripts Automation
+2024-02-15 20:36:39,721 [main ] INFO  ExtensionLoader - Initializing Active Scan Rules - Release status active scan rules
+2024-02-15 20:36:39,721 [main ] INFO  ExtensionLoader - Initializing ExtensionOnlineMenu - The Online menu links
+2024-02-15 20:36:39,722 [main ] INFO  ExtensionLoader - Initializing ExtensionTipsAndTricks - Tips and Tricks
+2024-02-15 20:36:39,722 [main ] INFO  ExtensionLoader - Initializing ExtensionAlertFilters - Context alert rules filter
+2024-02-15 20:36:39,728 [main ] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2024-02-15 20:36:39,730 [main ] INFO  ExtensionLoader - Initializing Common Library - A library of shared functionality
+2024-02-15 20:36:39,730 [main ] INFO  ExtensionLoader - Initializing Common Library Form Handler - Common Library Form Handler Integration
+2024-02-15 20:36:39,731 [main ] INFO  ExtensionLoader - Initializing Advance Fuzzer - Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2024-02-15 20:36:39,734 [main ] INFO  ExtensionLoader - Initializing HTTP Fuzzer - Allows to fuzz HTTP messages.
+2024-02-15 20:36:39,735 [main ] INFO  ExtensionLoader - Initializing Postman Import - Allows you to spider and import Postman collections
+2024-02-15 20:36:39,742 [main ] INFO  ExtensionLoader - Initializing Report Generator - Templated and themed report generation functionality
+2024-02-15 20:36:39,744 [main ] INFO  ExtensionLoader - Initializing Report Generation Automation Integration - Report Generation Automation Integration
+2024-02-15 20:36:39,747 [main ] INFO  ExtensionLoader - Initializing ExtensionGettingStarted - The ZAP Getting Started Guide
+2024-02-15 20:36:39,747 [main ] INFO  ExtensionLoader - Initializing Out-of-band Application Security Testing - Adds Out-of-band Application Security Testing functionality.
+2024-02-15 20:36:39,753 [main ] INFO  ExtensionLoader - Initializing OAST Scripts - Adds OAST scripts.
+2024-02-15 20:36:39,754 [main ] INFO  ExtensionLoader - Initializing WebSocket Fuzzer - Allows to fuzz WebSocket messages.
+2024-02-15 20:36:39,754 [main ] INFO  ExtensionLoader - Initializing WebSocket Message Editor - Provides the WebSocket Message Editor dialogues.
+2024-02-15 20:36:39,755 [main ] INFO  ExtensionLoader - Initializing ExtensionHUD - Heads Up Display
+2024-02-15 20:36:39,975 [main ] INFO  ExtensionLoader - Initializing ExtensionHUDlaunch - ExtensionHUDlaunch
+2024-02-15 20:36:39,976 [main ] INFO  ExtensionLoader - Initializing Spider Extension - Spider used for automatically finding URIs on a site.
+2024-02-15 20:36:40,010 [main ] INFO  ExtensionLoader - Initializing Spider Automation - Spider Automation Integration
+2024-02-15 20:36:40,168 [main ] INFO  ExtensionQuickStart - Shh! No check-for-news - silent mode enabled
+2024-02-15 20:36:40,756 [main ] INFO  VersionPrinter - Flyway Community Edition 9.20.0 by Redgate
+2024-02-15 20:36:40,757 [main ] INFO  VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2024-02-15 20:36:40,757 [main ] INFO  VersionPrinter - 
+2024-02-15 20:36:40,778 [main ] INFO  BaseDatabaseType - Database: jdbc:hsqldb:file:/demo/test_output/dast-output-3101280293/db/permanent (HSQL Database Engine 2.7)
+2024-02-15 20:36:40,788 [main ] WARN  Database - Flyway upgrade recommended: HSQLDB 2.7 is newer than this version of Flyway and support has not been tested. The latest supported version of HSQLDB is 2.6.
+2024-02-15 20:36:40,815 [main ] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-02-15 20:36:40,818 [main ] INFO  DbValidate - Successfully validated 1 migration (execution time 00:00.018s)
+2024-02-15 20:36:40,828 [main ] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-02-15 20:36:40,864 [main ] INFO  DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+2024-02-15 20:36:40,869 [main ] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create table boast"
+2024-02-15 20:36:40,904 [main ] INFO  DbMigrate - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.007s)
+2024-02-15 20:36:40,912 [main ] INFO  CallbackService - Started callback service on 0.0.0.0:42033
+2024-02-15 20:36:40,917 [main ] INFO  ExtensionNetwork - Creating new root CA certificate.
+2024-02-15 20:36:42,392 [main ] INFO  ExtensionNetwork - New root CA certificate created.
+2024-02-15 20:36:42,427 [main ] INFO  ExtensionCallHome - Shh! Silent mode or telemetry turned off
+2024-02-15 20:36:42,516 [main ] INFO  CommandLine - Job authentication set method = script
+2024-02-15 20:36:42,517 [main ] INFO  CommandLine - Job authentication set parameters = {scriptEngine=ECMAScript : Graal.js, usernameKey=uid, loginURL=http://testfire.net/doLogin, script=/demo/testfire_auth.js, passwordKey=passw}
+2024-02-15 20:36:42,517 [main ] INFO  CommandLine - Job verification set loggedInRegex = Sign off
+2024-02-15 20:36:42,518 [main ] INFO  CommandLine - Job verification set loggedOutRegex = Sign In
+2024-02-15 20:36:42,518 [main ] INFO  CommandLine - Job verification set method = poll
+2024-02-15 20:36:42,519 [main ] INFO  CommandLine - Job verification set pollFrequency = 60
+2024-02-15 20:36:42,519 [main ] INFO  CommandLine - Job verification set pollPostData = 
+2024-02-15 20:36:42,519 [main ] INFO  CommandLine - Job verification set pollUnits = requests
+2024-02-15 20:36:42,520 [main ] INFO  CommandLine - Job verification set pollUrl = http://testfire.net/bank/transfer.jsp
+2024-02-15 20:36:42,521 [main ] INFO  CommandLine - Job sessionManagement set method = cookie
+2024-02-15 20:36:42,521 [main ] INFO  CommandLine - Job sessionManagement set parameters = {}
+2024-02-15 20:36:42,524 [main ] INFO  CommandLine - Job users set credentials = {password=admin, username=admin}
+2024-02-15 20:36:42,524 [main ] INFO  CommandLine - Job users set name = Admin
+2024-02-15 20:36:42,525 [main ] INFO  CommandLine - Job script set action = add
+2024-02-15 20:36:42,527 [main ] INFO  CommandLine - Job script set engine = ECMAScript : Graal.js
+2024-02-15 20:36:42,527 [main ] INFO  CommandLine - Job script set file = /demo/testfire_auth.js
+2024-02-15 20:36:42,527 [main ] INFO  CommandLine - Job script set inline = 
+2024-02-15 20:36:42,528 [main ] INFO  CommandLine - Job script set name = testfire_auth
+2024-02-15 20:36:42,528 [main ] INFO  CommandLine - Job script set target = 
+2024-02-15 20:36:42,528 [main ] INFO  CommandLine - Job script set type = authentication
+2024-02-15 20:36:42,530 [main ] INFO  CommandLine - Job passiveScan-config set enableTags = false
+2024-02-15 20:36:42,530 [main ] INFO  CommandLine - Job passiveScan-config set maxAlertsPerRule = 0
+2024-02-15 20:36:42,531 [main ] INFO  CommandLine - Job passiveScan-config set maxBodySizeInBytesToScan = 0
+2024-02-15 20:36:42,531 [main ] INFO  CommandLine - Job passiveScan-config set scanOnlyInScope = true
+2024-02-15 20:36:42,532 [main ] INFO  CommandLine - Job spiderAjax set context = testfire
+2024-02-15 20:36:42,532 [main ] INFO  CommandLine - Job spiderAjax set maxCrawlDepth = 2
+2024-02-15 20:36:42,533 [main ] INFO  CommandLine - Job spiderAjax set maxDuration = 60
+2024-02-15 20:36:42,533 [main ] INFO  CommandLine - Job spiderAjax set numberOfBrowsers = 4
+2024-02-15 20:36:42,534 [main ] INFO  CommandLine - Job spiderAjax set runOnlyIfModern = false
+2024-02-15 20:36:42,534 [main ] INFO  CommandLine - Job spiderAjax set user = Admin
+2024-02-15 20:36:42,534 [main ] INFO  CommandLine - Job activeScan set addQueryParam = false
+2024-02-15 20:36:42,535 [main ] INFO  CommandLine - Job activeScan set context = testfire
+2024-02-15 20:36:42,535 [main ] INFO  CommandLine - Job activeScan set delayInMs = 0
+2024-02-15 20:36:42,535 [main ] INFO  CommandLine - Job activeScan set handleAntiCSRFTokens = false
+2024-02-15 20:36:42,536 [main ] INFO  CommandLine - Job activeScan set injectPluginIdInHeader = false
+2024-02-15 20:36:42,536 [main ] INFO  CommandLine - Job activeScan set maxRuleDurationInMins = 0
+2024-02-15 20:36:42,536 [main ] INFO  CommandLine - Job activeScan set maxScanDurationInMins = 0
+2024-02-15 20:36:42,536 [main ] INFO  CommandLine - Job activeScan set policy = 
+2024-02-15 20:36:42,536 [main ] INFO  CommandLine - Job activeScan set scanHeadersAllRequests = false
+2024-02-15 20:36:42,537 [main ] INFO  CommandLine - Job activeScan set threadPerHost = 5
+2024-02-15 20:36:42,537 [main ] INFO  CommandLine - Job activeScan set user = Admin
+2024-02-15 20:36:42,538 [main ] INFO  CommandLine - Job activeScan set defaultStrength = medium
+2024-02-15 20:36:42,538 [main ] INFO  CommandLine - Job activeScan set defaultThreshold = medium
+2024-02-15 20:36:42,561 [main ] INFO  CommandLine - Job report set reportDir = /demo/test_output/dast-output-3101280293
+2024-02-15 20:36:42,561 [main ] INFO  CommandLine - Job report set reportFile = ZAP-Report
+2024-02-15 20:36:42,561 [main ] INFO  CommandLine - Job report set template = traditional-json-plus
+2024-02-15 20:36:43,559 [main ] INFO  ScriptBasedAuthenticationMethodType - Successfully loaded new script for ScriptBasedAuthentication: ScriptBasedAuthenticationMethod [script=org.zaproxy.zap.extension.script.ScriptWrapper@dffcf1, paramValues={loginURL=null, usernameKey=null, passwordKey=null}, credentialsParamNames=[username, password]]
+2024-02-15 20:36:43,567 [main ] INFO  ScriptBasedAuthenticationMethodType - Loaded script:testfire_auth.js
+2024-02-15 20:36:43,801 [main ] INFO  CommandLine - Job script started
+2024-02-15 20:36:43,803 [main ] INFO  CommandLine - Job: script Start action: add
+2024-02-15 20:36:43,811 [main ] INFO  CommandLine - Job script finished, time taken: 00:00:00
+2024-02-15 20:36:43,811 [main ] INFO  CommandLine - Job passiveScan-config started
+2024-02-15 20:36:43,813 [main ] INFO  CommandLine - Job passiveScan-config finished, time taken: 00:00:00
+2024-02-15 20:36:43,822 [main ] INFO  CommandLine - Job spiderAjax started
+2024-02-15 20:36:43,842 [ZAP-AjaxSpiderAuto] INFO  SpiderThread - Running Crawljax (with firefox-headless): Auto - Context: testfire
+2024-02-15 20:36:43,864 [ZAP-AjaxSpiderAuto] INFO  SpiderThread - Starting proxy...
+2024-02-15 20:36:43,874 [ZAP-AjaxSpiderAuto] INFO  SpiderThread - Proxy started, listening at port [46877].
+2024-02-15 20:36:44,151 [ZAP-AjaxSpiderAuto] INFO  Plugins - Loaded org.zaproxy.zap.extension.spiderAjax.SpiderThread$DummyPlugin@29b8ba78 as a OnBrowserCreatedPlugin
+2024-02-15 20:36:48,564 [ZAP-IO-Server-1-1] INFO  User - Authenticating user: Admin
+2024-02-15 20:37:04,920 [ZAP-AjaxSpiderAuto] INFO  CrawlController - Received shutdown notice. Reason is Exausted
+2024-02-15 20:37:07,431 [ZAP-AjaxSpiderAuto] INFO  CrawlController - Shutdown process complete
+2024-02-15 20:37:07,457 [ZAP-AjaxSpiderAuto] INFO  SpiderThread - Stopping proxy...
+2024-02-15 20:37:07,503 [ZAP-AjaxSpiderAuto] INFO  SpiderThread - Proxy stopped.
+2024-02-15 20:37:07,507 [ZAP-AjaxSpiderAuto] INFO  SpiderThread - Finished Crawljax: Auto - Context: testfire
+2024-02-15 20:37:07,700 [main ] INFO  CommandLine - Job spiderAjax found 97 URLs
+2024-02-15 20:37:07,701 [main ] INFO  CommandLine - Job spiderAjax finished, time taken: 00:00:23
+2024-02-15 20:37:07,703 [main ] INFO  CommandLine - Job passiveScan-wait started
+2024-02-15 20:37:07,717 [main ] INFO  CommandLine - Job passiveScan-wait finished, time taken: 00:00:00
+2024-02-15 20:37:07,726 [main ] INFO  CommandLine - Job activeScan started
+2024-02-15 20:37:07,745 [main ] INFO  CommandLine - Job activeScan set default strength to MEDIUM
+2024-02-15 20:37:07,746 [main ] INFO  CommandLine - Job activeScan set default threshold to MEDIUM
+2024-02-15 20:37:07,755 [main ] INFO  Scanner - scanner started
+2024-02-15 20:37:08,042 [ZAP-Scanner-0] INFO  HostProcess - Scanning 8 node(s) from http://testfire.net as Admin
+2024-02-15 20:37:08,055 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | PathTraversalScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:14,145 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | PathTraversalScanRule in 6.099s with 45 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:14,146 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | RemoteFileIncludeScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:18,050 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | RemoteFileIncludeScanRule in 3.903s with 30 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:18,051 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SourceCodeDisclosureWebInfScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:18,074 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | HeartBleedActiveScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:18,084 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SourceCodeDisclosureCve20121823ScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:23,743 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SourceCodeDisclosureWebInfScanRule in 5.688s with 44 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:27,831 [ZAP-ActiveScanner-1] INFO  HostProcess - completed host/plugin http://testfire.net | HeartBleedActiveScanRule in 9.75s with 3 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:27,834 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SourceCodeDisclosureCve20121823ScanRule in 9.752s with 3 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:27,836 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | RemoteCodeExecutionCve20121823ScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:28,840 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | RemoteCodeExecutionCve20121823ScanRule in 1.005s with 16 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:28,842 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | ExternalRedirectScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:32,475 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | ExternalRedirectScanRule in 3.632s with 27 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:32,478 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | ServerSideIncludeScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:34,045 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | ServerSideIncludeScanRule in 1.563s with 12 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:34,057 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | CrossSiteScriptingScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:36,063 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | CrossSiteScriptingScanRule in 2.008s with 15 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:36,067 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | PersistentXssPrimeScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:36,454 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | PersistentXssPrimeScanRule in 0.388s with 3 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:36,454 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | PersistentXssSpiderScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:37,114 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | PersistentXssSpiderScanRule in 0.659s with 8 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:37,115 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | PersistentXssScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:37,410 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | PersistentXssScanRule in 0.295s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:37,411 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:47,595 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionScanRule in 10.183s with 78 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:47,598 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionMySqlScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:50,263 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionMySqlScanRule in 2.665s with 21 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:50,270 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionHypersonicScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:52,475 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionHypersonicScanRule in 2.209s with 18 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:52,476 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionOracleScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:54,854 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionOracleScanRule in 2.379s with 18 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:54,856 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionPostgreScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:37:56,751 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionPostgreScanRule in 1.895s with 15 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:37:56,753 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionSqLiteScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:38:00,417 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionSqLiteScanRule in 3.665s with 29 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:38:00,419 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | DomXssScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:38:08,645 [Thread-627] INFO  DomXssScanRule - Reaper thread starting
+2024-02-15 20:38:40,216 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | DomXssScanRule in 39.795s with 102 message(s) sent and 4 alert(s) raised.
+2024-02-15 20:38:42,276 [Thread-624] WARN  ExternalProcess - failed to copy the output of process 1988
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(Unknown Source) ~[?:?]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[?:?]
+	at java.io.InputStream.transferTo(Unknown Source) ~[?:?]
+	at org.openqa.selenium.os.ExternalProcess$Builder.lambda$start$0(ExternalProcess.java:209) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2024-02-15 20:38:42,899 [Thread-606] WARN  ExternalProcess - failed to copy the output of process 1805
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(Unknown Source) ~[?:?]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[?:?]
+	at java.io.InputStream.transferTo(Unknown Source) ~[?:?]
+	at org.openqa.selenium.os.ExternalProcess$Builder.lambda$start$0(ExternalProcess.java:209) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2024-02-15 20:38:43,540 [Thread-601] WARN  ExternalProcess - failed to copy the output of process 1799
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(Unknown Source) ~[?:?]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[?:?]
+	at java.io.InputStream.transferTo(Unknown Source) ~[?:?]
+	at org.openqa.selenium.os.ExternalProcess$Builder.lambda$start$0(ExternalProcess.java:209) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+2024-02-15 20:38:43,546 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SqlInjectionMsSqlScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:38:43,871 [ZAP-DomXssReaper] INFO  DomXssScanRule - Reaper thread exiting 0
+2024-02-15 20:38:44,636 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SqlInjectionMsSqlScanRule in 1.091s with 8 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:38:44,640 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | Log4ShellScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:38:44,652 [ZAP-Scanner-0] INFO  HostProcess - skipped plugin [no Active Scan OAST service is selected.] http://testfire.net | Log4ShellScanRule in 0.014s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:38:44,652 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | Spring4ShellScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:38:45,707 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | Spring4ShellScanRule in 1.055s with 17 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:38:45,708 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | CodeInjectionScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:38:48,749 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | CodeInjectionScanRule in 3.041s with 24 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:38:48,751 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | CommandInjectionScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:01,754 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | CommandInjectionScanRule in 13.002s with 105 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:01,755 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | XpathInjectionScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:03,086 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | XpathInjectionScanRule in 1.324s with 9 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:03,092 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | XxeScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:03,361 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | XxeScanRule in 0.269s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:03,362 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | PaddingOracleScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:03,735 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | PaddingOracleScanRule in 0.373s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:03,736 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | CloudMetadataScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:03,737 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SstiScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:04,448 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | CloudMetadataScanRule in 0.711s with 4 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:09,361 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SstiScanRule in 5.623s with 42 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:09,362 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SstiBlindScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:13,854 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SstiBlindScanRule in 4.491s with 36 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:13,855 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | DirectoryBrowsingScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:14,492 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | DirectoryBrowsingScanRule in 0.637s with 8 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:14,494 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | BufferOverflowScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:14,906 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | BufferOverflowScanRule in 0.411s with 3 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:14,910 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | FormatStringScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:16,044 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | FormatStringScanRule in 1.135s with 9 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:16,045 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | CrlfInjectionScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:18,686 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | CrlfInjectionScanRule in 2.641s with 21 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:18,687 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | ParameterTamperScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:21,172 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | ParameterTamperScanRule in 2.485s with 21 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:21,173 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | ElmahScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:21,175 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | TraceAxdScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:21,297 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | ElmahScanRule in 0.125s with 1 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:21,561 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | TraceAxdScanRule in 0.387s with 2 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:21,563 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | HtAccessScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:21,940 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | HtAccessScanRule in 0.378s with 2 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:21,940 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | EnvFileScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:22,438 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | EnvFileScanRule in 0.498s with 2 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:22,439 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | HiddenFilesScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:22,495 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SpringActuatorScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:22,497 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | XsltInjectionScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:22,747 [ZAP-ActiveScanner-1] INFO  HostProcess - completed host/plugin http://testfire.net | SpringActuatorScanRule in 0.251s with 2 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:28,620 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | HiddenFilesScanRule in 6.181s with 50 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:28,624 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | XsltInjectionScanRule in 6.126s with 12 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:28,632 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | GetForPostScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:28,908 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | GetForPostScanRule in 0.277s with 1 message(s) sent and 1 alert(s) raised.
+2024-02-15 20:39:28,909 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | UserAgentScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:38,984 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | UserAgentScanRule in 10.075s with 96 message(s) sent and 24 alert(s) raised.
+2024-02-15 20:39:38,985 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | ScriptsActiveScanner strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:38,991 [ZAP-Scanner-0] INFO  HostProcess - skipped plugin [no scripts enabled] http://testfire.net | ScriptsActiveScanner in 0.006s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:38,993 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SOAPActionSpoofingActiveScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:39,267 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SOAPActionSpoofingActiveScanRule in 0.275s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:39,268 [ZAP-Scanner-0] INFO  HostProcess - start host http://testfire.net | SOAPXMLInjectionActiveScanRule strength MEDIUM threshold MEDIUM
+2024-02-15 20:39:39,534 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://testfire.net | SOAPXMLInjectionActiveScanRule in 0.265s with 0 message(s) sent and 0 alert(s) raised.
+2024-02-15 20:39:39,534 [ZAP-Scanner-0] INFO  HostProcess - completed host http://testfire.net in 151.75s with 29 alert(s) raised.
+2024-02-15 20:39:39,535 [Thread-55] INFO  Scanner - scanner completed in 151.78s
+2024-02-15 20:39:39,975 [main ] INFO  CommandLine - Job activeScan finished, time taken: 00:02:32
+2024-02-15 20:39:39,976 [main ] INFO  CommandLine - Job report started
+2024-02-15 20:39:40,755 [main ] INFO  CommandLine - Job report generated report /demo/test_output/dast-output-3101280293/ZAP-Report.json
+2024-02-15 20:39:40,759 [main ] INFO  CommandLine - Job report finished, time taken: 00:00:00
+2024-02-15 20:39:40,767 [main ] INFO  CommandLine - Automation plan succeeded!
+2024-02-15 20:39:44,321 [main ] INFO  CommandLineBootstrap - ZAP 2.14.0 terminated.

@@ -28,3 +28,4 @@ docker run -e CX_APIKEY=eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwNzEx
   --retry=3 \
   --retry-delay=20 \
   --fail-on HIGH \
+  > /dev/null &
