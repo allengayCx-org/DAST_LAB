@@ -5,8 +5,8 @@ env:
             parameters:
                 loginURL: http://testfire.net/doLogin
                 passwordKey: passw
-                #script: /github/workspace/dast-config/testfire_auth.js
-                script: /demo/testfire_auth.js
+                #script: /demo/testfire_auth.js
+                script: /github/workspace/dast-config/testfire_auth.js
                 scriptEngine: 'ECMAScript : Graal.js'
                 usernameKey: uid
             verification:
@@ -47,8 +47,8 @@ jobs:
       parameters:
         action: add
         engine: 'ECMAScript : Graal.js'
-        file: /demo/testfire_auth.js
-        #file: /github/workspace/dast-config/testfire_auth.js
+        #file: /demo/testfire_auth.js
+        file: /github/workspace/dast-config/testfire_auth.js
         inline: ""
         name: testfire_auth
         target: ""
